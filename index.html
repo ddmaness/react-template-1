@@ -11,6 +11,17 @@
     <div id="root"></div>
 	<script type="text/babel">
 		
+		function EmployeeCard(props) {
+			return(
+				<div>
+					<img src={props.image} alt={props.imageAlt}/>
+					<h5>{props.title}</h5>
+					<h3>{props.name}</h3>
+					<p>{props.information}</p>
+				</div>
+			)
+		}
+
 		function Info(props) {
 			return(
 				<p>{props.information}</p>
@@ -48,6 +59,24 @@
 		    				subheader="Meet the Team">
 							<Info 
 								information="Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna."
+							/>
+							<EmployeeCard
+								image="https://www.nobelprize.org/nobel_prizes/physics/laureates/1912/gustaf-dalen-photo.jpg"
+								imageAlt="Gustaf Dalen"
+								title="CEO"
+								information=" Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum."
+							/>
+							<EmployeeCard
+								image="http://www.acclaimimages.com/_gallery/_free_images/0478-1003-0821-4902_portrait_of_martin_van_buren_8th_american_president_m.jpg"
+								imageAlt="Marten Van Buren"
+								title="Lead Designer"
+								information="Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa."
+							/>
+							<EmployeeCard
+								image="http://farm8.staticflickr.com/7219/7240826570_86f451f4ce_o.jpg"
+								imageAlt="James Joyce"
+								title="Lead Programmer"
+								information="Mauris ipsum. Morbi lectus risus, iaculis vel, Fusce ac turpis quis ipsum. Morbi lectus risus, iaculis vel, s ligula lacinia aliquet. Suscipit quis, luctus non, massa."
 							/>
 		    			</Sect>
 		    			<Sect
