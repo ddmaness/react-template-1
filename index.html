@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+    	function Sect(props){
+    		return(
+    			<section>
+    				<h5>{props.header}</h5>
+    				<h2>{props.subheader}</h2>
+    			</section>
+    		)
+    	}
+
+    	class Test extends React.Component {
+    		render() {
+	    		return(
+	    			<div>
+		    			<Sect
+		    				header="Our Mission"
+		    				subheader="We Translate Your Business to the Language of Design"
+		    			/>
+		    			<Sect
+		    				header="What We Do"
+		    				subheader="We Make Eye-Catching Sites to Grow Your Business"
+		    			/>
+		    			<Sect
+		    				header="Who We Are"
+		    				subheader="Meet the Team"
+		    			/>
+		    			<Sect
+		    				header="Latest Post"
+		    				subheader="Basic Principles of Web Design"
+		    			/>
+		    			<Sect
+		    				header="Contact Us"
+		    				subheader="We Look Forward to Hearing from You"
+		    			/>
+	    			</div>
+	    		);
+    		}
+    		
+    	}
+
+
+    	//RENDER METHOD ====================================
+      	ReactDOM.render(
+        	<Test/>,
+        	document.getElementById('root')
+      	);
+    </script>
+    
+  </body>
+</html>
