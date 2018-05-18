@@ -9,13 +9,20 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="text/babel">
+	<script type="text/babel">
+		
+		function Info(props) {
+			return(
+				<p>{props.information}</p>
+			)
+		}
 
     	function Sect(props){
     		return(
     			<section>
     				<h5>{props.header}</h5>
     				<h2>{props.subheader}</h2>
+					{props.children}
     			</section>
     		)
     	}
@@ -26,16 +33,23 @@
 	    			<div>
 		    			<Sect
 		    				header="Our Mission"
-		    				subheader="We Translate Your Business to the Language of Design"
-		    			/>
+		    				subheader="We Translate Your Business to the Language of Design">
+							<Info
+								information="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. "
+							/>
+							<button>Learn More</button>
+		    			</Sect>
 		    			<Sect
 		    				header="What We Do"
 		    				subheader="We Make Eye-Catching Sites to Grow Your Business"
 		    			/>
 		    			<Sect
 		    				header="Who We Are"
-		    				subheader="Meet the Team"
-		    			/>
+		    				subheader="Meet the Team">
+							<Info 
+								information="Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna."
+							/>
+		    			</Sect>
 		    			<Sect
 		    				header="Latest Post"
 		    				subheader="Basic Principles of Web Design"
