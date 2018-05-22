@@ -10,6 +10,19 @@
   <body>
     <div id="root"></div>
 	<script type="text/babel">
+
+		function Hero() {
+			return (
+				<div>
+					<div>
+						<img class = "logo"/>
+						<h3>Stylish</h3>
+					</div>
+					<h1>The Power of Design</h1>
+				</div>
+			)
+		}
+
 		function BlogPreview(props) {
 			return (
 				<div>
@@ -80,6 +93,7 @@
     		render() {
 	    		return(
 	    			<div>
+						<Hero/>
 		    			<Sect
 		    				header="Our Mission"
 		    				subheader="We Translate Your Business to the Language of Design">
