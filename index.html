@@ -24,6 +24,31 @@
 				</div>
 			)
 		}
+		
+		function Contact() {
+			return(
+				<div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.466208828201!2d-85.304259348518!3d41.968799179113205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8817b790953d4161%3A0x14618ffe2e071b37!2s57111+Stowell+Rd%2C+Colon%2C+MI+49040!5e0!3m2!1sen!2sus!4v1527014101238" width="600" height="450" frameBorder="0"></iframe>
+					<div>
+						<h5>Location</h5>
+						<h3>57111 Stowell Road, Colon, MI</h3>
+					</div>
+					<div>
+						<h5>Fax</h5>
+						<h3>248-555-1392</h3>
+					</div>
+					<div>
+						<h5>Phone</h5>
+						<h3>248-555-8267</h3>
+					</div>
+					<div>
+						<h5>Email</h5>
+						<h3>admin@design.solutions</h3>
+					</div>
+				</div>
+			)
+		}
+
 		function EmployeeCard(props) {
 			return(
 				<div>
@@ -105,8 +130,9 @@
 						</Sect>
 		    			<Sect
 		    				header="Contact Us"
-		    				subheader="We Look Forward to Hearing from You"
-		    			/>
+		    				subheader="We Look Forward to Hearing from You">
+							<Contact/>
+						</Sect>
 	    			</div>
 	    		);
     		}
